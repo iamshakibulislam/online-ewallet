@@ -1,0 +1,219 @@
+
+@media (max-width: 768px){
+	body{
+		font-size: 13px !important;
+	}
+	.hero-text{
+
+		margin-left:35px !important;
+		margin-top:69px !important;
+		margin-right: 0px !important;
+		 
+		
+	}
+}
+
+
+body{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	background-color: white;
+
+}
+
+nav {
+	height: 4rem;
+}
+
+nav ul li a{
+	color:white !important ;
+	
+	
+}
+
+
+
+
+
+nav ul li{
+	pading-bottom:3px !important;
+
+	transition-duration: 0.5s !important;
+}
+
+nav ul li:hover{
+
+
+	border-bottom: 1px solid white !important;
+
+}
+
+.head-section{
+	background-image: linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../img/heroimage-min.jpg');
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+
+.hero-text{
+
+	margin-left:10rem;
+	margin-top: 12rem;
+}
+
+.calltoaction{
+	background-color: #383CC1;
+}
+
+.moreinfobtn{
+	background-color: #2827CC;
+}
+
+
+/** our service Section Css **/
+
+
+section {
+	margin-top:4rem;
+}
+
+
+.section-icon{
+
+	font-size:10rem;}
+
+
+#faq .section-border{
+	margin-bottom:5rem;
+	border-bottom:2px solid gray;
+	width:40vw;
+
+}
+
+.section-border{
+	margin-bottom:5rem;
+	border-bottom:2px solid gray;
+	width:30vw;
+}
+
+.service-column{
+	box-shadow: 0.5px 0px 10px rgba(0,0,0,0.2);
+	border-radius: 1rem;
+}
+
+.img-rounded{
+	border-radius: 10px !important;
+}
+
+.subsection-head{
+	margin-bottom: 3rem !important;
+}
+
+.samble-text{
+	font-size: 0.9rem;
+}
+
+.btn-send{
+	background-color: #538FFB;
+}
+
+
+/** faq section **/
+
+.panel-heading a{
+	color:white;
+	margin-left: 1rem;
+}
+
+.panel-title{
+		padding-top:1rem;
+	    padding-bottom: 1rem;
+
+}
+
+.panel-heading a:hover{
+	text-decoration: none;
+}
+
+.panel-heading{
+	background-color: rgba(0,0,0,0.5);
+	color:white;
+	margin-bottom:1px !important;
+	margin-top:1px;
+}
+
+.panel-heading:hover{
+	border:1px solid red;
+
+}
+
+.panel-body{
+	border:2px solid gray;
+	padding-top:2rem;
+	padding-bottom: 2rem;
+	padding-left:10px;
+	padding-right:10px;
+
+}
+
+
+
+.arrow-icon{
+	font-size: 1.5rem;
+}
+
+/* footer section starts here */
+
+footer{
+	margin-top:4rem !important;
+}
+
+.foot-header{
+	margin-top:2rem;
+	margin-bottom: 1rem !important;
+
+}
+
+.foot-text{
+	font-size: 0.9rem;
+	margin-bottom: 3rem;
+}
+
+footer .section-border{
+	margin-bottom:2rem;
+	border-bottom:2px solid white;
+	width:10vw;
+}
+
+.foot-lnk{
+	margin-left: 5rem !important;
+	margin-right: auto !important;
+}
+
+.copyright-text{
+	background-color: rgba(0,0,0,0.5);
+}
+
+
+/** registration section starts here **/
+
+.reg-img{
+	background-image: linear-gradient(to right,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+	 url('../img/registration-min.jpg');
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+
+.loginform{
+	margin-top:auto;
+	margin-bottom: auto;
+}
+
+.form-input{
+	margin-top:4rem;
+	border:1px solid green;
+	box-shadow: 2px 4px 4px 6px rgba(0,0,0,0.2);
+
+}

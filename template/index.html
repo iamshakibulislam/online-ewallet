@@ -1,0 +1,526 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+	<title>e-wallet | send and receive money online</title>
+</head>
+<body>
+
+
+<header>
+	<div class="head-section">
+
+<nav class="navbar navbar-expand-md navbar-dark bg-transparent">
+	<div class="container">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+    <a class="navbar-brand" href="#">E-WALLET</a>
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home   <span class="sr-only">(current)</span></a>
+      </li><span class="bar d-none d-md-block text-white mx-1 my-auto" >|</span>
+      <li class="nav-item">
+        <a class="nav-link" href="#our-services">Our services </a>
+      </li><span class="bar d-none d-md-block text-white mx-1 my-auto">|</span>
+      <li class="nav-item">
+        <a class="nav-link" href="#about-us"> About us  </a>
+      </li><span class="bar d-none d-md-block text-white mx-1 my-auto"> |</span>
+      <li class="nav-item">
+        <a class="nav-link" href="#faq"> Faq  </a>
+      </li><span class="bar d-none d-md-block text-white mx-1 my-auto"> |</span>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact-us">Contact us  </a>
+      </li><span class="bar d-none d-md-block text-white mx-1 my-auto">|</span>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'login_page' %}">Login </a>
+      </li><span class="bar d-none d-md-block text-white mx-1 my-auto">|</span>  
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'registration_page' %}">Register</a>
+      </li>
+    </ul>
+    
+  </div>
+</div>
+</nav>
+
+<div class="hero-text">
+		
+		<h2 class="text-white mb-3">Send Money Worldwide Instantly </h2>
+		<p class="lead d-none d-lg-block mb-4 text-white">Send money to your friends and family.Generate invoice and get paid from your client in a just few clicks.<br> Secure transection within a second.<br></p>
+		<a class="calltoaction btn btn-info btn-lg" href="#">Get started</a>
+		<a href="#" class="btn text-white ml-3 btn-lg btn-danger moreinfobtn">More info</a>
+
+</div>
+
+
+</div>
+</header>
+	
+
+<!-- our services section starts here -->
+
+<section id="our-services">
+
+  <div class="container-fluid">
+
+    <h1 class="section-header text-dark text-center mt-4">Our Services</h1>
+    <div class="section-border text-center mx-auto"></div>
+
+    <div class="row mt-4 justify-content-around">
+
+      <div class="col-md-3 mt-3 service-column">
+        <div class="col-content mt-4">
+
+        <div class="section-icon-wrap d-flex justify-content-center mb-4">
+
+        <i class="section-icon far text-danger fa-paper-plane"></i>
+      </div>
+      
+        <h4 class="sub-header text-center mb-4 mt-4">Instant money transfer</h4>
+        <p class="laed text-justify">Transfer money to your friends and family globaly with a single mouse click.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis modi vero vitae mollitia non quaerat porro repellendus, nihil ex nobis. Autem officia error, dolores voluptatem quibusdam vel culpa reprehenderit dolore.
+        </p>
+      </div>
+
+
+        
+      </div>
+
+        <div class="col-md-3 mt-3 service-column">
+          <div class="col-content mt-4">
+
+        <div class="section-icon-wrap d-flex justify-content-center mb-4">
+
+        <i class="section-icon fas text-danger fa-file-invoice-dollar"></i>
+        </div>
+      
+        <h4 class="sub-header text-center mb-4 mt-4">One click invoice</h4>
+        <p class="laed text-justify">Generate invoice and send to your client within minutes and get paid.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis modi vero vitae mollitia non quaerat porro repellendus, nihil ex nobis. Autem officia error, dolores voluptatem quibusdam vel culpa reprehenderit dolore.
+        </p>
+
+      </div>
+
+
+        
+      </div>
+
+
+
+
+        <div class="col-md-3 mt-3 service-column">
+          <div class="col-content mt-4">
+
+        <div class="section-icon-wrap d-flex justify-content-center mb-4">
+
+        <i class="section-icon fas text-danger fa-hand-holding-usd"></i>
+      </div>
+      
+        <h4 class="sub-header text-center mb-4 mt-4">Request  money in seconds</h4>
+        <p class="laed text-justify">Request money to your friend.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis modi 
+          vero vitae mollitia non quaerat porro repellendus, nihil ex nobis.
+           Autem officia error, dolores voluptatem quibusdam vel culpa reprehenderit dolore.
+        </p>
+
+      </div>
+        
+      </div>
+
+
+
+          
+      </div>
+    
+
+  </div>
+
+	
+</section>
+
+<!-- our services section ends here -->
+
+<section id="about-us">
+
+  <div class="container-fluid">
+    <h1 class="section-header text-dark text-center mt-4">About us</h1>
+    <div class="section-border text-center mx-auto"></div>
+    <div class="row">
+      <div class="col-md-7">
+        <h3 class="text-center text-dark font-weight-bold mb-4 subsection-head">Who we are-</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="{% static 'img/team-min.jpg' %}" class="img-fluid img-rounded">
+          </div>
+          <div class="col-md-6">
+            <p class="lead samble-text text-justify">We are the team of developers ..... Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Facere officia quae saepe optio necessitatibus quas excepturi voluptate repudiandae nostrum possimus nulla ab minima accusamus eum eveniet fugiat impedit numquam beatae dignissimos laborum<br>
+            <br> itaque id hic cumque quo, commodi? Distinctio fugit consequuntur aspernatur dolor illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium neque perspiciatis porro rem, nulla obcaecati p>
+          </div>
+
+        </div>
+        
+      </div>
+
+      <div class="col-md-5">
+         <h3 class="text-center text-dark font-weight-bold mb-4 subsection-head">Our activity-</h3>
+        <ul class="list-group">
+          <li class="list-group-item">We help to keep your transection fast and safe</li>
+          <li class="list-group-item">Money Lorem ipsum dolor sit, amet consectetur adip. </li>
+          <li class="list-group-item">Transfering money to your friends Lorem ipsum</li>
+          <li class="list-group-item">Shop worldwide instantly without any hustle  Lorem ipsum dolor, sit.</li>
+          <li class="list-group-item">World largest money transfering network ipsum dolor sit, amet consectetur adip. </li>
+
+      </div>
+
+    </div>
+  </div>
+  
+
+</section>
+
+<!-- about us section ends there -->
+
+<!--Faq section starts here -->
+
+<section id="faq">
+  <div class="container-fluid">
+    <h1 class="section-header text-dark text-center mt-4">Frequently asked questions</h1>
+    <div class="section-border text-center mx-auto"></div>
+    <div class="row justify-content-around">
+      <div class="col-md-5">
+
+    <div class="panel-group" id="accordion">
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h6 class="panel-title d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+          <a >How much the fee to send money?
+
+          </a>
+          <i class="mr-4 arrow-icon fas fa-arrow-circle-down"></i>
+
+        </h6>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h6 class="panel-title d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+          <a >Can i make invoice?
+
+          </a>
+          <i class="mr-4 arrow-icon fas fa-arrow-circle-down"></i>
+
+        </h6>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse in">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h6 class="panel-title d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+          <a > How to request money from someone?
+
+          </a>
+          <i class="mr-4 arrow-icon fas fa-arrow-circle-down"></i>
+
+        </h6>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse in">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+    
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h6 class="panel-title d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+          <a > Does your company use data encryption?
+
+          </a>
+          <i class="mr-4 arrow-icon fas fa-arrow-circle-down"></i>
+
+        </h6>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse in">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h6 class="panel-title d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+          <a > Is my money secured here?
+
+          </a>
+          <i class="mr-4 arrow-icon fas fa-arrow-circle-down"></i>
+
+        </h6>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse in">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+
+    
+
+      </div> 
+        
+      </div>
+
+      <!--another faq column -->
+      
+      <div class="col-md-5">
+
+    <div class="panel-group" id="accordion">
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h6 class="panel-title d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+          <a > Can i withdraw money to the bank?
+
+          </a>
+          <i class="mr-4 arrow-icon fas fa-arrow-circle-down"></i>
+
+        </h6>
+      </div>
+      <div id="collapse6" class="panel-collapse collapse in">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h6 class="panel-title d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+          <a > What are the service limitaion?
+
+          </a>
+          <i class="mr-4 arrow-icon fas fa-arrow-circle-down"></i>
+
+        </h6>
+      </div>
+      <div id="collapse7" class="panel-collapse collapse in">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h6 class="panel-title d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+          <a >Do i have to verify my account?
+
+          </a>
+          <i class="mr-4 arrow-icon fas fa-arrow-circle-down"></i>
+
+        </h6>
+      </div>
+      <div id="collapse8" class="panel-collapse collapse in">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+    
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h6 class="panel-title d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+          <a > 
+            How long it takes to transfer money?
+
+          </a>
+          <i class="mr-4 arrow-icon fas fa-arrow-circle-down"></i>
+
+        </h6>
+      </div>
+      <div id="collapse9" class="panel-collapse collapse in">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h6 class="panel-title d-flex justify-content-between" data-toggle="collapse" data-parent="#accordion" href="#collapse10">
+          <a>How can i deposit money to my account?
+
+          </a>
+          <i class="mr-4 arrow-icon fas fa-arrow-circle-down"></i>
+
+        </h6>
+      </div>
+      <div id="collapse10" class="panel-collapse collapse in">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+
+    
+
+      </div> 
+        
+      </div>
+
+
+
+
+      <!--ends of another faq column -->
+</div>
+  </div>
+</section>
+
+
+<!-- Faq section ends here -->
+
+
+<!-- contact us section starts here -->
+
+<section id="contact-us">
+  <div class="container-fluid">
+    <h1 class="section-header text-dark text-center mt-4">Contact us</h1>
+    <div class="section-border text-center mx-auto"></div>
+    <div class="row justify-content-center">
+      <div class="col-md-7">
+
+        <form>
+          <div class="form-group">
+            <label for="name">Name : </label>
+            <input type="text" name="name" class="form-control" id="name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email : </label>
+            <input type="email" id="email" name="email" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="name">Subject : </label>
+            <input type="text" name="subject" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="name">Message : </label>
+            <textarea name="subject" rows="10" class="form-control" placeholder="Message starts here">
+              
+            </textarea>
+          </div>
+          <button class="btn btn-send btn-success btn-md text-white"  type="submit">Send message
+          </button>
+
+          
+
+
+        </form>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- contact us section ends here -->
+
+
+<footer class="site-footer bg-dark">
+
+<div class="row justify-content-around">
+   <div class="col-md-3">
+     <h5 class="text-white text-center font-weight-bold foot-header">E-wallet</h5>
+      <div class="section-border text-center mx-auto"></div>
+     <p class="lead text-white text-justify foot-text">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+     Consequatur ea pariatur similique maxime libero fuga voluptas
+      nesciunt minima corrupti nobis sapiente, distinctio, corporis
+     impedit maiores debitis fugiat accusantium, earum!. Lorem,
+      ipsum dolor sit amet consectetur adipisicing, elit.
+       Dolorem ipsum aut qui ex voluptatibus architecto culpa suscipit magni neque deserunt.</p>
+   </div>
+
+   <div class="col-md-3">
+     <h5 class="text-white text-center font-weight-bold foot-header">Quick links</h5>
+      <div class="section-border text-center mx-auto"></div>
+      <ul class="list-unstyled foot-text foot-lnk">
+        <li class="m-2"><a class="text-white" href="#home">home</a></li>
+        <li class="m-2"><a class="text-white" href="#about-us">about us</a></li>
+        <li class="m-2"><a class="text-white" href="#faq">faq</a></li>
+        <li class="m-2"><a class="text-white" href="#contact-us">contact us</a></li>
+        <li class="m-2"><a class="text-white" href="{% url 'login_page' %}">login</a></li>
+        <li class="m-2"><a class="text-white" href="{% url 'registration_page' %}">register</a></li>
+        
+      </ul>
+   </div>
+
+   <div class="col-md-3">
+     <h5 class="text-white text-center font-weight-bold foot-header">Contact</h5>
+      <div class="section-border text-center mx-auto"></div>
+      <ul class="list-unstyled foot-text foot-lnk">
+        <li class="mb-2 text-white"><i class="fas fa-home mr-3 text-white"></i>
+         New York, NY 10027, US</li>
+          <li class="mb-2 text-white"><i class="fas fa-envelope-square mr-3 text-white"></i>
+         exampl@e-wallet.com</li>
+          <li class="mb-2 text-white"><i class="fas fa-phone-volume mr-3 text-white"></i>
+           +01 234 567 89</li>
+          <li class="mb-2 text-white"><i class="fas fa-fax mr-3 text-white"></i>
+          +01 234 567 89</li>
+          
+        
+      </ul>
+   </div>
+
+
+</div> 
+ <div class="row copyright-text">
+   <div class="col-md-12 text-center text-white font-weight-bold pt-2 pb-2">
+   &copy; 2021 Copyright E-wallet
+ </div>
+ </div>
+
+
+</footer>
+
+<!--javascript cdn -->
+<script src="https://kit.fontawesome.com/f7191d8fdb.js" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+<!-- end of javascript cdn -->
+
+</body>
+</html>

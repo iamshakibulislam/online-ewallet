@@ -1,0 +1,3 @@
+django 3.1.4 ----pip install django==3.1.4
+requests     ----pip install requests
+checkout sdk ----pip install checkout-sdk==2.0b8

@@ -1,0 +1,47 @@
+	
+	{% extends 'dashboard/dashboard-base.html' %}
+	{% block title %} Dashboard showcase {% endblock title %}
+
+	{% block content %}
+		<!-- content area -->
+		<div class="row justify-content-around mt-4">
+			
+
+			<div class="card bg-warning" style="width:12rem">
+				<div class="card-header text-white text-center">
+					Balance
+				</div>
+				<div class="card-body text-center font-weight-bold text-success">
+				   {{ balance }} <span>$</span>
+				</div>
+			</div>
+			<div class="card bg-warning" style="width:15rem">
+				<div class="card-header text-white text-center">
+					money requests(pending)
+				</div>
+				<div class="card-body  text-center font-weight-bold text-success">
+					{% if pending_req %}
+					{{pending_req}}
+					{% else %}0
+					{%endif %}
+				</div>
+			</div>
+			<div class="card bg-warning" style="width:18rem">
+				<div class="card-header text-white text-center">
+					your requested money(pending)
+				</div>
+				<div class="card-body text-center font-weight-bold text-success">
+					{% if pending_user_req %}
+					{{pending_user_req}}
+					{% else %}0
+					{% endif %}
+					
+				</div>
+			</div>
+
+
+		
+	</div>
+
+<!-- end of content area -->
+	{% endblock content %}

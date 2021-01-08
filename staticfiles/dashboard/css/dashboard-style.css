@@ -1,0 +1,54 @@
+body{
+	margin:0;
+	box-sizing: border-box;
+}
+
+.sidebarcol{
+	height: 100vh !important;
+	width: 100%;
+}
+
+nav{
+	margin:0px !important;
+	padding:0px !important;
+}
+nav ul{
+	width: 100% !important;
+	margin-top:2rem !important;
+}
+nav ul li{
+	margin-top:0rem;
+	border-top:1px solid white;
+	padding-top:0.5rem;
+	padding-bottom: 0.5rem;
+
+}
+nav ul li:last-child{
+	border-bottom: 1px solid white;
+}
+nav ul li a{
+	margin-left: 2rem !important;
+	color:white !important;
+
+
+}
+nav ul li:hover{
+	background-color: black;
+	}
+
+
+.dash-body{
+	box-shadow: 2px 3px 10px 10px rgba(0,0,0,0.2);
+}
+
+/** add fund page style *//
+
+.fund-form{
+	height: 100vh ;
+}
+.form-input{
+	margin-top:4rem;
+	border:1px solid green;
+	box-shadow: 2px 4px 4px 6px rgba(0,0,0,0.2);
+
+}

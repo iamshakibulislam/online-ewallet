@@ -1,0 +1,27 @@
+{% extends 'dashboard/dashboard-base.html' %}
+{% block title %}donation link {% endblock title %}
+{% block content %}
+
+<div class="row">
+	<div class="col-md-5 mx-auto mt-4">
+		<h2 class="text-center mb-4">Your donation link</h2>
+		<div class="text-center donate-link font-weight-bold">
+			<div id="unique-link"><h6 class="d-inline" id="lnk">
+			http://{{ request.META.HTTP_HOST }}/donate/?user={{request.user.id}}</h6>
+				<i class="ml-auto fas fa-copy" id="copy-text" data-clipboard-target="#lnk"></i></div>
+
+		</div>
+	</div>
+</div>
+<style type="text/css">
+	.donate-link{
+		margin-top: 7rem ;
+		padding:3rem;
+		box-shadow: 2px 3px 5px 4px rgba(0,0,0,0.2);
+	}
+	.fa-copy{
+		font-size: 2rem;
+	}
+</style>
+
+{%endblock content %}

@@ -1,0 +1,71 @@
+{% extends 'dashboard/dashboard-base.html' %}
+{% block title %}  {% endblock title %}
+{% block content %}
+
+<div class="row">
+
+	<div class="col-md-8 mx-auto mt-4">
+		<h2 class="font-weight-bold text-center mb-4">
+		Pending money requests</h2>
+		{% if count == 0 %}
+		<h3 class="text-center text-danger">No available data !</h3>
+		{% else %}
+		{% if messages %}
+   			 {% for message in messages %}
+        		<div class="alert alert-success mt-4 alert-dismissible fade show">
+           		 <strong>Success!</strong> {{message}}
+            	<button type="button" class="close" data-dismiss="alert">&times;</button>
+       		 </div>
+    		{% endfor %}
+ 			{% endif %}
+
+		<table class="table table-stripedS mt-4">
+			<thead class="bg-dark text-white">
+				<tr><th class="text-center">Date</th>
+					<th class="text-center">Type</th>
+					<th class="text-center">With</th>
+					<th class="text-center">Amount</th>
+					<th class="text-center">Action</th>
+				</tr>
+			</thead>
+			<tbody class="bg-dark text-white">
+				{% for data in request_data %}
+				<tr>
+					<td>{{data.date}}</td>
+					{% if data.request_from == request.user %}
+					<td>Your request</td>
+					<td>{{data.request_to.full_name}}</td>
+					{% else %}
+					<td>peoples request</td>
+					<td>{{data.request_from.full_name}}</td>
+					{% endif %}
+
+					<td>{{data.amount}}</td>
+					<td class=""><a href="{% url 'delete_request' data.id %}" class="pb-1 mt-4">
+						<i class="far fa-trash-alt text-danger"></i></a>
+						{% if not data.request_from == request.user %}
+						<a href="{% url 'approve_request' data.id %}" class="ml-4 pb-1 my-auto mt-2">
+							<i class="fas fa-check-square text-success"></i></a>
+						{% endif %}
+					</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+			</thead>
+		</table>
+		{% endif %}
+	</div>
+
+</div>
+<style type="text/css">
+	table {font-size: 1.2rem}
+	tr i{font-size: 2rem !important;
+
+	}
+	tr a:hover{
+		border-bottom:3px solid green;
+
+	}
+</style>
+
+{% endblock content %}

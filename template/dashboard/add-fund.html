@@ -1,0 +1,82 @@
+
+{% extends 'dashboard/dashboard-base.html' %}
+{% block title %} Add fund | e-wallet {% endblock title %}
+{% block content %}  
+ <div class="row">
+ 		<div class="col-md-5 .fund-form ml-auto mr-auto mt-4">
+ 		
+ 		<h3 class="font-weight-bold mb-4 mt-auto">Add fund to your account </h3>
+ 		{% if BlankError %}
+ 		<div class="alert alert-danger">{{BlankError}}</div>
+ 		{% endif %}
+ 		{% if PaymentError %}
+ 		<div class="alert alert-danger">{{PaymentError}}</div>
+ 		{% endif %}
+ 		{% if NoPayment %}
+ 		<div class="alert alert-danger">{{NoPayment}}</div>
+ 		{% endif %}
+ 		{% if credited %}
+ 		<div class="alert alert-success">{{credited}}</div>
+ 		{% endif %}
+ 	<div class="form form-input">
+ 	<form id="payment-form" class="m-4" action="#" method="post">
+ 		{% csrf_token %}
+ 		<div class="form-group">
+ 		<input type="number" placeholder="amount" name="amount" class="form-control">
+ 		</div>
+ 		 
+ 		<div class="one-liner">
+      		<div class="card-frame">
+        <!-- form will be added here -->
+      		</div>
+      		
+      	</div>
+      	<input id="token" type="hidden"  name="token">
+ 		<input id="pay-button" type="button" value="Add fund" class="btn btn-primary">
+ 	</form>
+ </div>
+</div>
+</div>
+
+
+<script src="https://cdn.checkout.com/js/framesv2.min.js"></script>
+<script type="text/javascript">
+	
+    var payButton = document.getElementById("pay-button");
+    var form = document.getElementById("payment-form");
+
+    Frames.init("pk_test_b8c1baa3-0ba8-4726-9d8c-672f0b621b6b");
+
+    Frames.addEventHandler(
+      Frames.Events.CARD_VALIDATION_CHANGED,
+      function (event) {
+
+        payButton.disabled = !Frames.isCardValid();
+      }
+    );
+
+    Frames.addEventHandler(
+      Frames.Events.CARD_TOKENIZED,
+      function (event) {
+        var el = document.getElementById("token");
+        el.setAttribute("value",event.token);
+        form.submit();
+        
+        
+      }
+    );
+
+    payButton.addEventListener("click", function (event) {
+      event.preventDefault();
+      payButton.value="proccesing.."
+      Frames.submitCard();
+      payButton.value="wait...."
+      
+      
+
+    });
+ 
+
+</script>
+
+ {% endblock content %}
